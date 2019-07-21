@@ -1,0 +1,305 @@
+/* Please insert all your CSS code into this document */
+
+body > header, body > footer {
+	width: 100%;
+	height: 5em;
+}
+
+body > header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding: 0.5em;
+	margin: 0;
+	background:
+	linear-gradient(135deg, #ECEDDC 25%, transparent 25%) -50px 0,
+	linear-gradient(225deg, #ECEDDC 25%, transparent 25%) -50px 0,
+	linear-gradient(315deg, #ECEDDC 25%, transparent 25%),
+	linear-gradient(45deg, #ECEDDC 25%, transparent 25%);
+	background-size: 100px 100px;
+	background-color: #EC173A;
+	z-index: 100;
+	color: #fff;
+	text-shadow: 2px 2px 3px #444;
+}
+
+body > footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 0 0.5em;
+	margin: 0;
+	background:
+	linear-gradient(135deg, #ECEDDC 25%, transparent 25%) -50px 0,
+	linear-gradient(225deg, #ECEDDC 25%, transparent 25%) -50px 0,
+	linear-gradient(315deg, #ECEDDC 25%, transparent 25%),
+	linear-gradient(45deg, #ECEDDC 25%, transparent 25%);
+	background-size: 100px 100px;
+	background-color: #EC173A;
+	z-index: 100; 
+}
+
+body {
+	font-family: 'Arvo', serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+/******Index**********/
+
+#wrapperIndex {
+	position: relative;
+	margin: 8em 0 10em 0;
+	z-index: 1;
+}
+
+/********Page One********/
+
+#wrapper1 {
+	position: relative;
+	margin: 0 0 10em 0;
+	z-index: 1;
+}
+
+#menu1 {
+	position: absolute;
+	left: -10px;
+	top: -70px;
+	width: 200px;
+	background-color: rgb(235,45,46);
+}
+
+/*For some reason, when I placed absolute positioning on 'article', they all stacked on top of each other. I tried fixing with z-indexing and calculating height and width, but things just became more clustered :/ */
+.articles1{
+	width: 90%;
+	margin-left: 200px;
+	position: fixed;
+	top: 100px;
+	bottom: 100px;
+	width: 800px;
+	overflow: scroll;
+	overflow-y: scroll;
+	overflow-x: scroll;
+	padding: 0.5em;
+}
+
+#fig11 {
+	width: 100%;
+}
+
+#fig12 {
+	width: 300px;
+}
+
+#fig13 {
+	width: 400px;
+}
+
+#fig14 {
+	width: 300px;
+}
+
+/********Page Two********/
+
+#wrapper2 {
+	position: relative;
+	margin: 5em 0 10em 0;
+	z-index: 1;
+}
+
+#menu2 {
+	float: left;
+	float: left;
+	width: 200px;
+	background-color: rgb(235,45,46);
+	margin-right: 50px;
+}
+
+.articles2 {
+	margin-left: 200px;
+	padding-top: 30px;
+}
+
+.figures2 {
+	float: left;
+}
+
+#fig21 {
+	width: 100%;
+}
+
+#fig22 {
+	width: 300px;
+}
+
+#fig23 {
+	width: 400px;
+}
+
+#fig24 {
+	width: 300px;
+}
+
+/********Page Three********/
+
+#wrapper3 {
+	position: relative;
+	left: -10px;
+	margin: 6em 0 10em 0;
+}
+
+#menu3 {
+	float: left;
+	width: 15%;
+	background-color: rgb(235,45,46);
+}
+
+.articles3 {
+	margin-left: 17%;
+}
+
+.figures3 {
+	float: left;
+}
+
+#fig31 {
+	width: 100%;
+}
+
+#fig32 {
+	width: 75%;
+}
+
+#fig33 {
+	width: 60%;
+}
+
+#fig34 {
+	width: 40%;
+}
+
+/********Page Four********/
+
+#wrapper4 {
+	position: relative;
+	margin: 6em 0 10em 0;
+	left: -10px;
+}
+
+#menu4 {
+	display: inline-block;
+	width: 15%;
+	background-color: rgb(235,45,46);
+	vertical-align: top;
+}
+
+.articles4 {
+	display: inline-block;
+	vertical-align: top;
+	width: 80%
+}
+
+.figures4 {
+	display: inline-block;
+	vertical-align: top;
+	margin: 1em;
+	width: auto;
+}
+
+#fig41 {
+	width: 100%;
+}
+
+#fig42 {
+	width: 75%;
+}
+
+#fig43 {
+	width: 60%;
+}
+
+#fig44 {
+	width: 40%;
+}
+
+/********Page Five********/
+
+#wrapper5 {
+	position: relative;
+	margin: 6em 0 10em 0;
+	left: -10px;
+}
+
+#menu5 {
+	position: fixed;
+	width: 15%;
+	height: 1000px;
+	background-color: rgb(235,45,46);
+	vertical-align: top;
+	font-family: 'Arial', sans-serif;
+	font-size: 16pt;
+}
+
+#menu5 ul {
+	list-style-type: none;
+	line-height: 1.5em;
+	padding-left: 15px;
+}
+
+#menu5 a {
+	text-decoration: none;
+}
+
+#menu5 a:visited {
+	color: #fff;
+}
+
+#menu5 a:hover {
+	text-shadow: 2px 2px 3px #666;
+}
+
+#banner {
+	height: 200px;
+}
+
+#banner img {
+	position: absolute;
+}
+
+#banner h2 {
+	position: absolute;
+	right: 565px;
+	bottom: 800px;
+	color: #fff;
+}
+
+.photoGallery {
+	display: inline-block;
+	vertical-align: top;
+	width: 80%;
+	padding: 1em;
+	margin-left: 175px;
+}
+
+.figures5 {
+	display: inline-block;
+	vertical-align: top;
+	margin: 1em;
+	width: 200px;
+}
+
+.figures5 img {
+	width: 200px;
+}
+
+.figures5 img:hover {
+	box-shadow: 4px 4px 5px #888;
+}
+
+.figures5 figcaption {
+	text-align: center;
+}
